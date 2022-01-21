@@ -1,5 +1,5 @@
 +++
-title = "归档"
+title = "Archives"
 layout = "archive"
 [menu.main]
   weight = 10
