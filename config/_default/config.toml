@@ -1,0 +1,68 @@
+baseURL = "https://example.com"
+title = "Matt Blog"
+theme = "hugo-theme-bootstrap"
+copyright = "Copyright © 2021-{year} Matt. All Rights Reserved."
+
+# Multilingual mode
+defaultContentLanguage = "zh-cn"
+# defaultContentLanguageInSubdir = true # If you use only one language comment this option
+disableLanguages = ["fr","zh-tw"] # For disable one or more language
+
+# Pagination
+paginate = 10
+# paginatePath = "page"
+
+# Disqus
+# disqusShortname = "yourdiscussshortname"
+
+# Google analytics
+# googleAnalytics = "UA-123-45"
+
+enableRobotsTXT = true
+
+enableEmoji = true
+
+# hasCJKLanguage = true # Turn on it if your content contains Chinese/Japanese/Korean Languages.
+
+pygmentsUseClasses = true
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[mediaTypes]
+  [mediaTypes."application/manifest+json"]
+    suffixes = ["json"]
+  
+[outputFormats]
+  [outputFormats.MANIFEST]
+    name = "manifest"
+    baseName = "manifest"
+    mediaType = "application/manifest+json"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "MANIFEST"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+[params]
+  enableGitalk = true
+[params.gitalk] 
+    clientID = "c04b0f441aaca6c35586"
+    clientSecret = "01a59d5ba58da4ce7b79ee7b1623fb7d0461a18a"
+    repo = "imattdu.github.io"
+    owner = "imattdu" # 您的GitHub ID
+    admin= "imattdu" # 您的GitHub ID
+    id= "location.pathname" # 文章页面的链接地址就是ID
+    labels= "gitalk"
+    perPage= 15 # Pagination size, with maximum 100.
+    pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually= true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
+    distractionFreeMode= true # Enable hot key (cmd|ctrl + enter) submit comment.
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2    
