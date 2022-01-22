@@ -15,8 +15,8 @@
   weight = 4
   [zh-cn.params]
     dateFormat = "2006-01-02"
-    description = "一个快速、响应式和功能丰富的 Hugo 博客主题"
-    keywords = "Hugo, Bootstrap, 博客主题"
+    description = "Matt Blog"
+    keywords = "Matt, Blog"
     [zh-cn.params.archive]
       dateFormat = "01-02"
 

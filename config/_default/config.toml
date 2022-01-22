@@ -16,7 +16,7 @@ paginate = 10
 # disqusShortname = "yourdiscussshortname"
 
 # Google analytics
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "G-5LDLF7JYWC"
 
 enableRobotsTXT = true
 
@@ -64,5 +64,5 @@ pygmentsUseClasses = true
 [markup]
   [markup.tableOfContents]
     endLevel = 4
-    ordered = false
+    ordered = true
     startLevel = 2    

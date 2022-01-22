@@ -69,7 +69,7 @@
   weight = 3
 
 [[footer]]
-  identifier = "友情链接"
+  identifier = "link"
   name = "友情链接"
   weight = 4
 
