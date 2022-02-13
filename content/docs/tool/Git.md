@@ -23,6 +23,121 @@ git使用
 
 <!--more-->
 
+
+
+
+
+
+
+## 安装
+
+### Mac
+
+### 安装
+
+https://www.git-scm.com/download/mac
+
+下载安装
+
+
+
+![](https://raw.githubusercontent.com/imattdu/img/main/img/202202120757953.png)
+
+
+
+#### 配置
+
+
+
+```sh
+
+git config --global user.name "matt"              # 你的名字
+git config --global user.email "imattdu@gmail.com"     # 你的邮箱
+
+
+# 配置git代理
+git config --global http.proxy 'http://127.0.0.1:7890/' 
+git config --global https.proxy 'http://127.0.0.1:7890/'
+
+# 配置github代理
+git config --global http.https://github.com.proxy 'http://127.0.0.1:7890/'
+
+# 取消代理
+git config --global --unset http.https://github.com.proxy 'http://127.0.0.1:7890/'
+
+```
+
+
+
+可以先安装brew
+
+```sh
+brew install git
+```
+
+
+
+
+
+#### 将本地安装的git卸载
+
+```sh
+cd ／usr／bin
+sudo rm －rf git＊
+```
+
+
+
+
+
+
+
+### Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+## SSH登录
+
+```python
+cd ~ # 进入家目录
+
+rm -rvf .ssh # 删除.ssh 目录
+
+ssh-keygen -t rsa -C matt17@qq.com # 运行命令生成.ssh 密钥目录
+```
+
+
+
+```python
+cd .ssh
+
+cat id_rsa.pub
+```
+
+复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG keys
+
+New SSH Key
+
+输入复制的密钥信息
+
+
+
+
+
+
+
+
+
 1.failed to push some refs to 'git@github.com:pavi-du/note.git'
 
 问题：自己在远程仓库更改了内容，而本地不知道，直接提交
@@ -83,30 +198,6 @@ git merge test // 合并test分支
 ```
 
 
-
-### SSH登录
-
-```python
-cd ~ # 进入家目录
-
-rm -rvf .ssh # 删除.ssh 目录
-
-ssh-keygen -t rsa -C matt17@qq.com # 运行命令生成.ssh 密钥目录
-```
-
-
-
-```python
-cd .ssh
-
-cat id_rsa.pub
-```
-
-复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG keys
-
-New SSH Key
-
-输入复制的密钥信息
 
 
 

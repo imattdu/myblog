@@ -1,4 +1,27 @@
++++
+title = "maven"
+date = 2022-01-20T17:25:20+08:00
+featured = false
+comment = true
+toc = true
+reward = true
+weight = 9
+categories = [
+  "tool"
+]
+tags = [
+]
+series = [
+]
+images = []
+aliases = [
+]
 
++++
+
+maven
+
+<!--more-->
 
 
 
@@ -6,7 +29,82 @@
 
 
 
-### 1.检查JAVA_HOME环境变量。
+
+
+### mac
+
+#### 安装
+
+下载地址：https://maven.apache.org/download.cgi
+
+
+
+![](https://raw.githubusercontent.com/imattdu/img/main/img/202202120020582.png)
+
+
+
+解压重命名为 ApacheMaven，移动到/usr/local下
+
+重命名
+
+```sh
+mv apache-maven-3.8.4 ApacheMaven
+```
+
+
+
+移动
+
+```sh
+mv ./ApacheMaven /usr/local/
+```
+
+
+
+#### 配置
+
+
+
+```sh
+vi ~/.bash_profile 
+
+```
+
+
+
+
+
+```sh
+export M="/usr/local/ApacheMaven"
+export PATH="$M/bin:$PATH"
+```
+
+
+
+
+
+
+
+```sh
+source ~/.bash_profile
+
+```
+
+
+
+
+
+```sh
+mvn -v
+```
+
+
+
+### Windows
+
+
+
+#### 1.检查JAVA_HOME环境变量。
 
 Maven是使用Java开发的，所以必须知道当前系统环境中JDK的安装目录。
 
@@ -19,7 +117,7 @@ D:\develop\env\jdk-8u201-windows-x64
 
 
 
-### 2.解压Maven的核心程序。
+#### 2.解压Maven的核心程序。
 
 将apache-maven-3.5.0-bin.zip解压到一个**非中文无空格**的目录下。例如
 
@@ -29,7 +127,7 @@ D:\develop\env\jdk-8u201-windows-x64
 
 
 
-### 3.配置环境变量
+#### 3.配置环境变量
 
 *都可以写在系统环境变量中*
 
@@ -47,7 +145,9 @@ path
 
 
 
-### 4.查看Maven版本信息验证安装是否正确
+### 验证
+
+#### 查看Maven版本信息验证安装是否正确
 
 
 
@@ -55,9 +155,9 @@ path
 
 
 
+### 配置依赖下载位置、aliyun仓库、 jdk
 
 
-### 5.配置本地仓库
 
 [1]Maven默认的本地仓库：~\.m2\repository目录。
 
@@ -89,15 +189,13 @@ Tips：~表示当前用户的家目录。
 
 ```xml
  <mirrors>
-  
-	
 	<mirror>  
-    		<id>alimaven</id>
-    		<name>aliyun maven</name>
-    		<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-    		<mirrorOf>central</mirrorOf> 
+		<id>alimaven</id>
+		<name>aliyun maven</name>
+		<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+		<mirrorOf>central</mirrorOf> 
 	</mirror>
-  </mirrors>
+</mirrors>
 ```
 
 
@@ -105,25 +203,20 @@ Tips：~表示当前用户的家目录。
 指定jdk版本
 
 ```xml
- <profiles>
-
-		<profile>
-		  <id>jdk-1.8</id>
-
-		  <activation>
+<profiles>
+	<profile>
+		<id>jdk-1.8</id>
+		<activation>
 			<activeByDefault>true</activeByDefault>
 			<jdk>1.8</jdk>
-		  </activation>
+		</activation>
 
-		  <properties>
-			  <maven.compiler.source>1.8</maven.compiler.source>
-			  <maven.compiler.target>1.8</maven.compiler.target>
-			  <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
-		  </properties>
-		</profile>
-		
-		
-   
-  </profiles>
+		<properties>
+			<maven.compiler.source>1.8</maven.compiler.source>
+			<maven.compiler.target>1.8</maven.compiler.target>
+			<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+		</properties>
+	</profile> 
+</profiles>
 ```
 

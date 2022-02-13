@@ -1,9 +1,9 @@
 mainSections = ["posts", "docs"] # Default to ["posts"].
 
-# titleSeparator = "|" # Title separator. Default to "-".
+titleSeparator = "|" # Title separator. Default to "-".
 
 description = "An extreme fast, responsive and feature-rich blog theme for Hugo"
-keywords = "Matt"
+keywords = "imatt"
 # images = ["site-feature-image.jpg"]
 
 # metaRobots = "noindex, nofollow" # Default value for Meta Tag "robots"
@@ -13,7 +13,8 @@ keywords = "Matt"
 logo = false # Disable Logo
 brand = "Matt"
 
-palette = "blue" # Default palette. Optional. You'll need to clear the browser cache after modifying this.
+# Cyan
+palette = "cyan" # Default palette. Optional. You'll need to clear the browser cache after modifying this.
 # palettes = ["blue", "blue gray", "brown"] # Available palettes. Default to ALL.
 # palettes = [] # Disable palette switcher.
 

@@ -1,3 +1,44 @@
++++
+title = "vscode"
+date = 2022-01-20T17:25:20+08:00
+featured = false
+comment = true
+toc = true
+reward = true
+weight = 9
+categories = [
+  "tool"
+]
+tags = [
+]
+series = [
+]
+images = []
+aliases = [
+]
+
++++
+
+vscode
+
+<!--more-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![](https://raw.githubusercontent.com/imattdu/img/main/img/20210518224538.png)
 
  

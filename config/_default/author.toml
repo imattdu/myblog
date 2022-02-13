@@ -1,12 +1,12 @@
 name = "Matt"
 avatar = "images/tx.png" # Avatar image. Default to "images/profile.webp".
-bio = "Soft Engineer."
-company = 'Student'
+bio = "Go Soft Engineer."
+company = 'Stu'
 # company = '<a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>'
 # location = "Earth"
 # alternatives:
 # location = "<a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>"
-location = "<a href='https://www.google.com/maps/search/beijing'>beijing</a>"
+location = "<a href='https://www.google.com/maps/search/北京'>北京</a>"
 # about = "https://imatt.top" # The external about page. The internal about page will be used if not set.
 
 [params]
